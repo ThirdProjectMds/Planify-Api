@@ -1,0 +1,122 @@
+[{
+
+  "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Museo del Prado",
+    "direction": "Calle de Felipe IV, s/n, 28014 Madrid",
+    "description": "Museo del Prado: Es uno de los museos más importantes del mundo, con una impresionante colección de arte europeo desde el siglo XII hasta el siglo XIX, que incluye obras maestras de artistas como Velázquez, Goya y El Greco.",
+    "tipo": "Museo",
+    "category": "Arte y Cultura",
+    "latitude": 40.4138,
+    "longitude": -3.6941,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Palacio Real de Madrid",
+    "direction": "Calle de Bailén, s/n, 28071 Madrid",
+    "description": "Palacio Real de Madrid: Este grandioso palacio es la residencia oficial de la familia real española, aunque solo se utiliza para ceremonias de Estado. Tiene más de 3.000 habitaciones, una arquitectura impresionante y hermosos jardines.",
+    "type": "Palacio",
+    "category": "Arte y Cultura",
+    "latitude": 40.4179,
+    "longitude": -3.7144,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Parque del Retiro",
+    "direction": "Plaza de la Independencia, s/n, 28001 Madrid",
+    "description": "Parque del Retiro: Este gran parque en el corazón de Madrid es un destino popular tanto para los locales como para los turistas. Cuenta con un lago donde los visitantes pueden alquilar barcas, así como muchos caminos para caminar, jardines y esculturas.",
+    "type": "Parque",
+    "category": "Naturaleza y Aire Libre",
+    "latitude": 40.4168,
+    "longitude": -3.6861,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Plaza Mayor de Madrid",
+    "direction": "Plaza Mayor, 28012 Madrid",
+    "description": "Plaza Mayor: Esta histórica plaza en el centro de Madrid es un lugar popular donde los turistas se reúnen para admirar las vistas. Tiene una arquitectura impresionante, artistas callejeros y muchos cafés al aire libre.",
+    "type": "Plaza",
+    "category": "Arte y Cultura",
+    "latitude": 40.4154,
+    "longitude": -3.7074,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Puerta del Sol",
+    "direction": "Puerta del Sol, 28013 Madrid",
+    "description": "Puerta del Sol: Esta bulliciosa plaza es uno de los monumentos más famosos de Madrid. Es el hogar de la famosa torre del reloj, así como de muchas tiendas, restaurantes y bares.",
+    "type": "Plaza",
+    "category": "Arte y Cultura",
+    "latitude": 40.4168,
+    "longitude": -3.7034,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Estadio Santiago Bernabéu",
+    "direction": "Avenida de Concha Espina, 1, 28036 Madrid",
+  "description": "Estadio Santiago Bernabéu: Este icónico estadio es el hogar del Real Madrid, uno de los clubes de fútbol más exitosos del mundo. Los visitantes pueden hacer tours del estadio e incluso ver un partido si tienen suerte.",
+    "type": "Estadio",
+    "category": "Deporte",
+    "latitude": 40.4531,
+    "longitude": -3.6883,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Templo de Debod",
+    "direction": "Calle Ferraz, 1, 28008 Madrid",
+    "description": "Templo de Debod: Este antiguo templo egipcio fue regalado a España en el siglo XX y trasladado a Madrid. Ahora es un lugar popular donde los turistas pueden admirar las hermosas vistas de la ciudad.",
+    "type": "Templo",
+    "category": "Arte y Cultura",
+    "latitude": 40.4236,
+    "longitude": -3.7178,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Mercado de San Miguel",
+    "direction": "Plaza de San Miguel, s/n, 28005 Madrid",
+    "description": "Mercado de San Miguel: Este mercado cubierto es el paraíso de los amantes de la comida. Los visitantes pueden probar muchos tipos diferentes de cocina española, incluyendo tapas, mariscos y vino.",
+    "type": "Mercado",
+    "category": "Gastronomía",
+    "latitude": 40.4154,
+    "longitude": -3.7088,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Catedral de la Almudena",
+    "direction": "Calle de Bailén, 10, 28013 Madrid",
+    "description": "Museo Reina Sofía: Este museo de arte moderno es el hogar de obras de famosos artistas españoles como Picasso y Dalí. Es un destino imprescindible para los amantes del arte.",
+    "type": "Catedral",
+    "category": "Arte y Cultura",
+    "latitude": 40.4153,
+    "longitude": -3.7142,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  },
+  {
+    "userName": "Ktireds",
+    "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
+    "title": "Gran Vía",
+    "direction": "Gran Vía, 28013 Madrid",
+    "description": "Gran Vía: Esta concurrida calle es uno de los destinos de compras más famosos de Madrid. Tiene muchas tiendas, teatros y restaurantes, así como una hermosa arquitectura.",
+    "type": "Calle",
+    "category": "Arte y Cultura",
+    "latitude": 40.4204,
+    "longitude": -3.7068,
+    "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
+  }
+]
