@@ -1,17 +1,18 @@
 [{
-
-  "userName": "Ktireds",
+    "id": "1",
+    "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Museo del Prado",
     "direction": "Calle de Felipe IV, s/n, 28014 Madrid",
     "description": "Museo del Prado: Es uno de los museos más importantes del mundo, con una impresionante colección de arte europeo desde el siglo XII hasta el siglo XIX, que incluye obras maestras de artistas como Velázquez, Goya y El Greco.",
-    "tipo": "Museo",
+    "type": "Museo",
     "category": "Arte y Cultura",
     "latitude": 40.4138,
     "longitude": -3.6941,
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "2",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Palacio Real de Madrid",
@@ -24,6 +25,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "3",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Parque del Retiro",
@@ -36,6 +38,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "4",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Plaza Mayor de Madrid",
@@ -48,6 +51,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "5",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Puerta del Sol",
@@ -60,11 +64,12 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "6",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Estadio Santiago Bernabéu",
     "direction": "Avenida de Concha Espina, 1, 28036 Madrid",
-  "description": "Estadio Santiago Bernabéu: Este icónico estadio es el hogar del Real Madrid, uno de los clubes de fútbol más exitosos del mundo. Los visitantes pueden hacer tours del estadio e incluso ver un partido si tienen suerte.",
+    "description": "Estadio Santiago Bernabéu: Este icónico estadio es el hogar del Real Madrid, uno de los clubes de fútbol más exitosos del mundo. Los visitantes pueden hacer tours del estadio e incluso ver un partido si tienen suerte.",
     "type": "Estadio",
     "category": "Deporte",
     "latitude": 40.4531,
@@ -72,6 +77,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "7",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Templo de Debod",
@@ -84,6 +90,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "8",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Mercado de San Miguel",
@@ -96,6 +103,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "9",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Catedral de la Almudena",
@@ -108,6 +116,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
+    "id": "10",
     "userName": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Gran Vía",

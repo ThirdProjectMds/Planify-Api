@@ -19,6 +19,7 @@ router.get("/users/:id", usersController.getUser);
 
 // POST
 
+router.get("/planify/v1/posts/:id", postController.detail);
 router.get("/planify/v1/posts", postController.getPosts);
 
 module.exports = router;
