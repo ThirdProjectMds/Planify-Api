@@ -45,6 +45,13 @@ const UserSchema = new mongoose.Schema(
   }
 )
 
+UserSchema.virtual('posts', {
+  ref: 'Post',
+  foreignField: 'author',
+  localField: '_id',
+  justOne: false
+})
+
 UserSchema.pre('save', function(next) {
   if (this.isModified('password')) {
     bcrypt.hash(this.password, ROUNDS)
