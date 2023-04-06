@@ -1,8 +1,10 @@
-// Post = require("../models/Post.model");
-// const { StatusCodes } = require("http-status-codes");
-const Posts = require("../data.json");
+const { StatusCodes } = require("http-status-codes");
+const postRepository = require("../repositories/post-mongo-repository");
 
-module.exports.create = (req, res, next) => {
+module.exports.create = async (req, res, next) => {
+  if (req.file) {
+    req.body.image = req.file.path;
+  }
   const {
     title,
     direction,
@@ -14,7 +16,7 @@ module.exports.create = (req, res, next) => {
     longitude,
   } = req.body;
 
-  Posts.push({
+  await postRepository.create({
     title,
     direction,
     description,
@@ -25,15 +27,16 @@ module.exports.create = (req, res, next) => {
     longitude,
     author: req.currentUserId,
   });
-
-  res.send(Posts)
-};
-module.exports.getPosts = (req, res, next) => {
-  res.send(Posts);
+  res.send();
 };
 
-module.exports.detail = (req, res, next) => {
+module.exports.getPosts = async (req, res, next) => {
+  const posts = await postRepository.getAll();
+  res.send(posts);
+};
+
+module.exports.detail = async (req, res, next) => {
   const { id } = req.params;
-  const postId = Posts.find((post) => post.id === id);
-  res.send(postId);
+  const post = await postRepository.get(id);
+  res.send(post);
 };

@@ -3,6 +3,8 @@ const usersController = require("../controllers/users.controllers");
 const authController = require("../controllers/auth.controller");
 const postController = require("../controllers/post.controller");
 const authMiddleware = require("../middlewares/auth.middleware");
+const upload = require("../config/storage.config")
+
 
 // Auth
 router.post("/login", authController.login);
@@ -21,5 +23,6 @@ router.get("/users/:id", usersController.getUser);
 
 router.get("/planify/v1/posts/:id", postController.detail);
 router.get("/planify/v1/posts", postController.getPosts);
+router.post("/planify/v1/posts", authMiddleware.isAuthenticated, upload.single("image"), postController.create)
 
 module.exports = router;
