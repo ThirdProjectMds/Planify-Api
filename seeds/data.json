@@ -1,6 +1,5 @@
 [{
-    "id": "1",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Museo del Prado",
     "direction": "Calle de Felipe IV, s/n, 28014 Madrid",
@@ -13,7 +12,7 @@
   },
   {
     "id": "2",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Palacio Real de Madrid",
     "direction": "Calle de Bailén, s/n, 28071 Madrid",
@@ -25,8 +24,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "3",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Parque del Retiro",
     "direction": "Plaza de la Independencia, s/n, 28001 Madrid",
@@ -38,8 +36,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "4",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Plaza Mayor de Madrid",
     "direction": "Plaza Mayor, 28012 Madrid",
@@ -51,8 +48,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "5",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Puerta del Sol",
     "direction": "Puerta del Sol, 28013 Madrid",
@@ -64,8 +60,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "6",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Estadio Santiago Bernabéu",
     "direction": "Avenida de Concha Espina, 1, 28036 Madrid",
@@ -77,8 +72,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "7",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Templo de Debod",
     "direction": "Calle Ferraz, 1, 28008 Madrid",
@@ -90,8 +84,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "8",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Mercado de San Miguel",
     "direction": "Plaza de San Miguel, s/n, 28005 Madrid",
@@ -103,8 +96,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "9",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Catedral de la Almudena",
     "direction": "Calle de Bailén, 10, 28013 Madrid",
@@ -116,8 +108,7 @@
     "image": "https://fotografias.larazon.es/clipping/cmsimages02/2022/09/25/97664605-FB1E-4627-B808-B7870D7EAFF2/98.jpg?crop=1960,1103,x0,y0&width=1900&height=1069&optimize=low&format=webply"
   },
   {
-    "id": "10",
-    "userName": "Ktireds",
+    "author": "Ktireds",
     "avatar": "https://cvhrma.org/wp-content/uploads/2015/07/default-profile-photo.jpg",
     "title": "Gran Vía",
     "direction": "Gran Vía, 28013 Madrid",

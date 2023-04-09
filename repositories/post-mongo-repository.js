@@ -5,8 +5,21 @@ module.exports.create = async (post) => {
 };
 
 module.exports.getAll = async () => {
-  return await Posts.find().populate('author', 'firstName avatar')
+  return await Posts.find().populate("author");
 };
 module.exports.get = async (id) => {
-  return await Posts.findById(id).populate('author', 'firstName avatar')
+  return await Posts.findById(id).populate("author");
 };
+
+module.exports.edit = async (id, post) => {
+  const updatePost = await Posts.findByIdAndUpdate(
+    id ,
+    { $set: post },
+    { new: true }
+  );
+  return updatePost;
+};
+
+module.exports.delete = async (id) => {
+  return await Posts.findByIdAndDelete(id)
+}

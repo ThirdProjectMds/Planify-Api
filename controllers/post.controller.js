@@ -40,3 +40,39 @@ module.exports.detail = async (req, res, next) => {
   const post = await postRepository.get(id);
   res.send(post);
 };
+
+module.exports.update = async (req, res, next) => {
+  if (req.file) {
+    req.body.image = req.file.path;
+  }
+  const {
+    title,
+    direction,
+    description,
+    type,
+    category,
+    image,
+    latitude,
+    longitude,
+  } = req.body;
+  const { id } = req.params;
+  await postRepository.edit(id, {
+    title,
+    direction,
+    description,
+    type,
+    category,
+    image,
+    latitude,
+    longitude,
+    author: req.currentUserId,
+  });
+  res.send();
+};
+
+module.exports.deletePost = async (req, res, next) => {
+  const { id } = req.params;
+  await postRepository.delete(id)
+  res.send()
+
+}

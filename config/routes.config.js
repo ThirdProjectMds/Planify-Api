@@ -10,7 +10,7 @@ const upload = require("../config/storage.config")
 router.post("/login", authController.login);
 
 // User Routes
-router.post("/users", usersController.create);
+router.post("/register", usersController.create);
 router.get("/users", usersController.list);
 router.get(
   "/users/me",
@@ -20,9 +20,11 @@ router.get(
 router.get("/users/:id", usersController.getUser);
 
 // POST
+const postV1BasePath = "/planify/v1/posts"
 
-router.get("/planify/v1/posts/:id", postController.detail);
-router.get("/planify/v1/posts", postController.getPosts);
-router.post("/planify/v1/posts", authMiddleware.isAuthenticated, upload.single("image"), postController.create)
-
+router.get(`${postV1BasePath}/:id`, postController.detail);
+router.get(postV1BasePath, postController.getPosts);
+router.post(postV1BasePath, authMiddleware.isAuthenticated, upload.single("image"), postController.create)
+router.put(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, upload.single("image"), postController.update)
+router.delete(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, postController.deletePost)
 module.exports = router;
