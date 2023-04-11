@@ -72,7 +72,33 @@ module.exports.update = async (req, res, next) => {
 
 module.exports.deletePost = async (req, res, next) => {
   const { id } = req.params;
-  await postRepository.delete(id)
-  res.send()
+  await postRepository.delete(id);
+  res.send();
+};
 
-}
+module.exports.getCategory = async (req, res, next) => {
+  const { category } = req.params;
+  await postRepository.getPostByCategory(category);
+  res.send();
+};
+
+module.exports.createLike = async (req, res, next) => {
+  const { id } = req.params;
+  const userId = req.currentUserId;
+
+  const post = await postRepository.get(id);
+
+  const hasLiked = post.likes.includes(userId);
+
+  if (hasLiked) {
+    post.likes = post.likes.filter(
+      (like) => like.toString() !== userId.toString()
+    );
+  } else {
+    post.likes.push(userId);
+  }
+  await post.save();
+  const likeCount = post.likes.length;
+  console.log(likeCount);
+  res.send({ likeCount });
+};

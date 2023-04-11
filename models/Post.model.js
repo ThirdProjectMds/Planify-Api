@@ -11,11 +11,6 @@ const postSchema = new mongoose.Schema(
       required: [true, REQUIRED_FIELD],
       
     },
-    // firstName : {
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: 'User',
-    //   required: [true, REQUIRED_FIELD],
-    // },
     title: {
       type: String,
       required: [true, REQUIRED_FIELD],
@@ -47,10 +42,11 @@ const postSchema = new mongoose.Schema(
     image: {
       type: String,
     },
-    // likes: [{
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: 'Like'
-    // }],
+    likes: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Like', 
+      
+    }],
     // comments: [{
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: 'Comment'

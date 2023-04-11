@@ -27,4 +27,8 @@ router.get(postV1BasePath, postController.getPosts);
 router.post(postV1BasePath, authMiddleware.isAuthenticated, upload.single("image"), postController.create)
 router.put(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, upload.single("image"), postController.update)
 router.delete(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, postController.deletePost)
+router.get(`${postV1BasePath}/:category`, postController.getCategory)
+
+
+router.post(`${postV1BasePath}/:id/like`, authMiddleware.isAuthenticated, postController.createLike)
 module.exports = router;

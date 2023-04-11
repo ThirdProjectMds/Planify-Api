@@ -8,7 +8,7 @@ module.exports.getAll = async () => {
   return await Posts.find().populate("author");
 };
 module.exports.get = async (id) => {
-  return await Posts.findById(id).populate("author");
+  return await Posts.findById(id).populate("author", "likes")
 };
 
 module.exports.edit = async (id, post) => {
@@ -23,3 +23,9 @@ module.exports.edit = async (id, post) => {
 module.exports.delete = async (id) => {
   return await Posts.findByIdAndDelete(id)
 }
+
+module.exports.getPostByCategory = async (category) => {
+  return await  Posts.find({ category: category })
+}
+
+
