@@ -3,7 +3,7 @@ const usersController = require("../controllers/users.controllers");
 const authController = require("../controllers/auth.controller");
 const postController = require("../controllers/post.controller");
 const authMiddleware = require("../middlewares/auth.middleware");
-const upload = require("../config/storage.config")
+const upload = require("../config/storage.config");
 
 
 // Auth
@@ -30,5 +30,17 @@ router.delete(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, postContr
 router.get(`${postV1BasePath}/:category`, postController.getCategory)
 
 
+// like
+
+
 router.post(`${postV1BasePath}/:id/like`, authMiddleware.isAuthenticated, postController.createLike)
-module.exports = router;
+
+
+
+
+// comment
+
+router.post(`${postV1BasePath}/:id/comment`, authMiddleware.isAuthenticated, postController.createComment)
+router.get(`${postV1BasePath}/:id/comments`,  postController.getComments);
+
+module.exports = router
