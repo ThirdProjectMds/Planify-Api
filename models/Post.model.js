@@ -42,19 +42,15 @@ const postSchema = new mongoose.Schema(
     image: {
       type: String,
     },
+    // comments: [{ 
+    //   content: String,
+    //   author: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+    // }],
+   
     likes: [{
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Like', 
-      
-    }],
-    // comments: [{
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: 'Comment'
-    // }],
-    // ratings: [{
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: 'Rating'
-    // }]
+      ref: 'Like'
+    }]
   },
   {
     timestamps: true,
@@ -67,7 +63,19 @@ const postSchema = new mongoose.Schema(
       },
     },
   }
-);
+)
+postSchema.virtual('countLikes').get(function(){
+  return this.likes.length
+})
+
+
+
+postSchema.virtual('comments', {
+  ref: 'Comment',
+  foreignField: 'postId',
+  localField: '_id',
+  justOne: false
+})
 
 const Post = mongoose.model('Post', postSchema);
 

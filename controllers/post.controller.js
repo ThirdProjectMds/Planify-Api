@@ -1,6 +1,6 @@
 const { StatusCodes } = require("http-status-codes");
 const postRepository = require("../repositories/post-mongo-repository");
-
+const commentRepository = require("../repositories/comment-mongo-repository");
 module.exports.create = async (req, res, next) => {
   if (req.file) {
     req.body.image = req.file.path;
@@ -85,9 +85,7 @@ module.exports.getCategory = async (req, res, next) => {
 module.exports.createLike = async (req, res, next) => {
   const { id } = req.params;
   const userId = req.currentUserId;
-
   const post = await postRepository.get(id);
-
   const hasLiked = post.likes.includes(userId);
 
   if (hasLiked) {
@@ -96,9 +94,32 @@ module.exports.createLike = async (req, res, next) => {
     );
   } else {
     post.likes.push(userId);
+    console.log(post.likes);
   }
   await post.save();
   const likeCount = post.likes.length;
-  console.log(likeCount);
   res.send({ likeCount });
+};
+
+module.exports.createComment = async (req, res, next) => {
+  const { id: postId } = req.params;
+  const { content } = req.body;
+  const userId = req.currentUserId;
+
+  if (!content) {
+    return res
+      .status(StatusCodes.BAD_REQUEST)
+      .send("Comment content is missing");
+  }
+
+  commentRepository.create({ postId, content, author: userId });
+  
+  res.send();
+};
+
+module.exports.getComments = async (req, res, next) => {
+  const { id } = req.params;
+  const post = await postRepository.get(id);
+  const comments = post.comments;
+  res.send(comments);
 };

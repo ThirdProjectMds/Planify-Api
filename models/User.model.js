@@ -11,7 +11,7 @@ const ROUNDS = 10;
 const EMAIL_PATTERN =
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-const UserSchema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
     firstName: {
       type: String,
@@ -42,7 +42,7 @@ const UserSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-    toJSON: {
+    toObject: {
       virtuals: true,
       transform: (doc, ret) => {
         delete ret.__v;
@@ -53,14 +53,27 @@ const UserSchema = new mongoose.Schema(
   }
 );
 
-UserSchema.virtual("posts", {
+userSchema.virtual("likes", {
+  ref: "Like",
+  foreignField: "author",
+  localField: "_id",
+  justOne: false,
+});
+userSchema.virtual("posts", {
   ref: "Post",
   foreignField: "author",
   localField: "_id",
   justOne: false,
 });
 
-UserSchema.pre("save", function (next) {
+userSchema.virtual('comments', {
+  ref: 'Comment',
+  foreignField: 'author',
+  localField: '_id',
+  justOne: false
+})
+
+userSchema.pre("save", function (next) {
   if (this.isModified("password")) {
     bcrypt
       .hash(this.password, ROUNDS)
@@ -74,10 +87,10 @@ UserSchema.pre("save", function (next) {
   }
 });
 
-UserSchema.methods.checkPassword = function (passwordToCompare) {
+userSchema.methods.checkPassword = function (passwordToCompare) {
   return bcrypt.compare(passwordToCompare, this.password);
 };
 
-const User = mongoose.model("User", UserSchema);
+const User = mongoose.model("User", userSchema);
 
 module.exports = User;
