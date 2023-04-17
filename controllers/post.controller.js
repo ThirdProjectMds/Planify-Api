@@ -113,7 +113,7 @@ module.exports.createComment = async (req, res, next) => {
   }
 
   commentRepository.create({ postId, content, author: userId });
-  
+
   res.send();
 };
 
@@ -122,4 +122,25 @@ module.exports.getComments = async (req, res, next) => {
   const post = await postRepository.get(id);
   const comments = post.comments;
   res.send(comments);
+};
+
+module.exports.editCommentPost = async (req, res, next) => {
+  
+  const { commentId } = req.params;
+  const { content } = req.body;
+  const { postId } = req.body;
+  const userId = req.currentUserId;
+console.log(req.params, "hoaoa");
+  await commentRepository.editComment(commentId, {
+    postId,
+    content,
+    author: userId,
+  });
+  res.send();
+};
+
+module.exports.deleteCommentPost = async (req, res, next) => {
+  const { id } = req.params;
+  await commentRepository.delete(id);
+  res.send();
 };

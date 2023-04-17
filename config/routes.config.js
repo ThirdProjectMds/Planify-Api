@@ -42,5 +42,6 @@ router.post(`${postV1BasePath}/:id/like`, authMiddleware.isAuthenticated, postCo
 
 router.post(`${postV1BasePath}/:id/comment`, authMiddleware.isAuthenticated, postController.createComment)
 router.get(`${postV1BasePath}/:id/comments`,  postController.getComments);
-
+router.put(`${postV1BasePath}/comment/:commentId/edit`, authMiddleware.isAuthenticated, postController.editCommentPost);
+router.delete(`${postV1BasePath}/:id/comment`, authMiddleware.isAuthenticated, postController.deleteCommentPost)
 module.exports = router

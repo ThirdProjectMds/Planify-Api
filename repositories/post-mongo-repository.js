@@ -16,7 +16,7 @@ module.exports.get = async (id) => {
 
 module.exports.edit = async (id, post) => {
   const updatePost = await Posts.findByIdAndUpdate(
-    id ,
+    id,
     { $set: post },
     { new: true }
   );
