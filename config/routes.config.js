@@ -28,13 +28,14 @@ router.post(postV1BasePath, authMiddleware.isAuthenticated, upload.single("image
 router.put(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, upload.single("image"), postController.update)
 router.delete(`${postV1BasePath}/:id`, authMiddleware.isAuthenticated, postController.deletePost)
 router.get(`${postV1BasePath}/:category`, postController.getCategory)
-
+router.get (`${postV1BasePath}/posts/me`, authMiddleware.isAuthenticated, postController.getMyPosts)
 
 // like
 
 
 router.post(`${postV1BasePath}/:id/like`, authMiddleware.isAuthenticated, postController.createLike)
-
+router.get(`${postV1BasePath}/likes/me`, authMiddleware.isAuthenticated, postController.getMyLikedPosts )
+router.delete(`${postV1BasePath}/:id/like`, authMiddleware.isAuthenticated, postController.deleteLike)
 
 
 
