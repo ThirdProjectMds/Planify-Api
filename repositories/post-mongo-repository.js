@@ -5,12 +5,12 @@ module.exports.create = async (post) => {
   await Posts.create(post);
 };
 
-module.exports.getAll = async () => {
-  const post = await Posts.find().populate("author").populate("comments");
+module.exports.getAll = async (query) => {
+  const post = await Posts.find(query).populate("author").populate("comments").populate({ path: 'likes', populate: 'author' });
   return post
 };
 module.exports.get = async (id) => {
-  return await Posts.findById(id).populate("author").populate({ path: 'comments', populate: 'author' })
+  return await Posts.findById(id).populate("author").populate({ path: 'comments', populate: 'author' }).populate({ path: 'likes', populate: 'author' })
 };
 
 

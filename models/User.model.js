@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-    toObject: {
+    toJSON: {
       virtuals: true,
       transform: (doc, ret) => {
         delete ret.__v;
