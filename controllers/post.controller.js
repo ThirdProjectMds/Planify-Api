@@ -142,25 +142,26 @@ module.exports.deleteCommentPost = async (req, res, next) => {
 };
 
 
-module.exports.getMyPosts = async (req, res, next) => {
-  try {
-    const userId = req.currentUserId;
-    const posts = await postRepository.getAll({ author: userId });
-    res.json(posts);
-  } catch (error) {
-    next(error);
-  }
-};
+  module.exports.getMyPosts = async (req, res, next) => {
+    try {
+      const userId = req.currentUserId;
+      const posts = await postRepository.getAll({ author: userId });
+      res.json(posts);
+    } catch (error) {
+      next(error);
+    }
+  };
 
-module.exports.getMyLikedPosts = async (req, res, next) => {
-  try {
-    const userId = req.currentUserId;
-    const myLikedPosts = await postRepository.getAll({ likes: userId });
-    res.json(myLikedPosts);
-  } catch (error) {
-    next(error);
+  module.exports.getMyLikedPosts = async (req, res, next) => {
+    try {
+      const userId = req.currentUserId;
+      
+      const myLikedPosts = await likeRepository.getMyLikes({author: userId });
+      res.json(myLikedPosts);
+    } catch (error) {
+      next(error);
+    }
   }
-}
 
 
 

@@ -31,7 +31,7 @@ const postSchema = new mongoose.Schema(
 
     category: {
       type: String,
-      required: [true, REQUIRED_FIELD],
+      // required: [true, REQUIRED_FIELD],
     },
     latitude: {
       type: Number,
