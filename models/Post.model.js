@@ -55,9 +55,6 @@ const postSchema = new mongoose.Schema(
     },
   }
 )
-// postSchema.virtual('countLikes').get(function(){
-//   return this.likes.length
-// })
 
 postSchema.virtual("likes", {
   ref: "Like",
