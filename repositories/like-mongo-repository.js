@@ -1,4 +1,3 @@
-const { query } = require("express");
 const Likes = require("../models/Like.model");
 
 module.exports.create = async (like) => {

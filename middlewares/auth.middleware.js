@@ -19,7 +19,6 @@ module.exports.isAuthenticated = (req, res, next) => {
     return next(createError(StatusCodes.UNAUTHORIZED, 'A token must be provided'))
   }
   
-  
   const secret = process.env.JWT_SECRET || 'test'
   jwt.verify(token, secret, (err, decodedToken) => {
     console.log(token);
