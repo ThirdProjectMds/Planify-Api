@@ -10,8 +10,6 @@ mongoose.connect(DB_URI)
     console.error(`An error ocurred trying to connect to de database ${DB_URI}`, error);
     process.exit(0);
   })
-
-
 process.on('SIGINT', () => {
   mongoose.connection.close()
     .then(function () {
