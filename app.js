@@ -7,10 +7,10 @@ const createError = require("http-errors");
 const { StatusCodes } = require("http-status-codes");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
-
+const passport = require("passport");
 /* Db config */
 require("./config/db.config");
-
+require("./config/passport.config")
 /* Config express middlewares */
 
 const app = express();
@@ -22,7 +22,7 @@ app.use(
 
 app.use(logger("dev"));
 app.use(express.json()); // Para poder tener req.body en peticiones de tipo application/json
-
+app.use(passport.initialize())
 /* Routes */
 
 const routes = require("./config/routes.config");

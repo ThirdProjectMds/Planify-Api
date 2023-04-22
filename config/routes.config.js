@@ -4,9 +4,21 @@ const authController = require("../controllers/auth.controller");
 const postController = require("../controllers/post.controller");
 const authMiddleware = require("../middlewares/auth.middleware");
 const upload = require("../config/storage.config");
-
+const passport = require("passport")
+const GOOGLE_SCOPES = [
+  "https://www.googleapis.com/auth/userinfo.profile",
+  "https://www.googleapis.com/auth/userinfo.email",
+];
 // Auth
 router.post("/login", authController.login);
+router.get(
+  "/api/login/google",
+  passport.authenticate("google-auth", { scope: GOOGLE_SCOPES })
+);
+router.get(
+  "/api/auth/google/callback", 
+  authController.loginGoogle
+);
 
 // User Routes
 router.post("/register", usersController.create);
