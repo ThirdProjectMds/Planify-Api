@@ -54,7 +54,7 @@ module.exports.loginGoogle = (req, res, next) => {
           expiresIn: "1d",
         }
       );
-      res.redirect(`${process.env.CLIENT_URL}/validation?callbackToken=${token}`);
+      res.redirect(`${process.env.CORS_ORIGIN}/validation?callbackToken=${token}`);
     }
   })(req, res, next);
 };
