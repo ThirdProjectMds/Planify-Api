@@ -165,24 +165,3 @@ module.exports.deleteCommentPost = async (req, res, next) => {
 
 
 
-// module.exports.createLike = async (req, res, next) => {
-  //   const { id } = req.params;
-  //   const userId = req.currentUserId;
-  //   // aquí creo un like
-  //   likeRepository.create({id, author: userId})
-  //   res.send()
-  //   // const post = await postRepository.get(id);
-  //   // const hasLiked = post.likes.includes(userId);
-  
-  //   // if (hasLiked) {
-    //   //   post.likes = post.likes.filter(
-      //   //     (like) => like.toString() !== userId.toString()
-      //   //   );
-      //   // } else {
-        //   //   post.likes.push(userId);
-        //   //   console.log(post.likes);
-        //   // }
-        //   // await post.save();
-        //   // const likeCount = post.likes.length;
-        //   // res.send({ likeCount });
-// };
